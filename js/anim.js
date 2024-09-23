@@ -1617,11 +1617,11 @@
     opacity: 0.0,
     manifest: [
       {
-        src: "./images/atlas1.png",
+        src: "../images/atlas1.png",
         id: "PROM_32540_atlas_1",
       },
       {
-        src: "./images/atlas2.png",
+        src: "../images/atlas2.png",
         id: "PROM_32540_atlas_2",
       },
     ],
