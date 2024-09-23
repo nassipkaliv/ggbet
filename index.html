@@ -1,0 +1,904 @@
+<!DOCTYPE html><html data-country="nl"><head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>GG.Bet</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body onload="init();">
+    <!-- <div class="preloader"><img alt="IceCasino" src="./img/preloader.svg"></div>
+    <div class="blur_wrap"> -->
+
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <a href="https://redirect-gg.com/?s=60&amp;ref=vp_w55458c194230l16758p2002_%7BUSER%7D&amp;click_id=%7BCID%7D&amp;encoded_url=Y2FzaW5vP3N1Yl9pZD0lN0JVU0VSJTdE" class="logo">
+            <img src="images/logo.png" alt="">
+          </a>
+          <div class="lang_switcher_outer">
+            <div class="lang_switcher">
+              <!-- <p>
+                                <span class="en">Language</span>
+                                <span class="th">ภาษา</span>
+                                <span class="vi">Ngôn ngữ</span>
+                                <span class="de">Sprache</span>
+                                <span class="ru">Язык</span>
+                                <span class="pl">Język</span>
+                                <span class="no">Tunge</span>
+                                <span class="dk">Sprog</span>
+                                <span class="cz">Jazyk</span>
+                                <span class="ro">Limba</span>
+                                <span class="ee">Keel</span>
+                                <span class="lv">Valodu</span>
+                                <span class="lt">Kalba</span>
+                                <span class="gr">Γλώσσα</span>
+                                <span class="hu">Nyelv</span>
+                                <span class="jp">言語</span>
+                                <span class="pt">Língua</span>
+                                <span class="es">Idioma</span>
+                                <span class="sk">Jazyk</span>
+                            </p> -->
+              <div class="curr_lang"></div>
+              <i class="lang_arr"></i>
+            </div>
+            <ul class="lang_list">
+              <li class="lang_list_item" data-lang="en">
+                <span class="flag-icon"><img src="images/en.svg" alt=""></span><span>en</span>
+              </li>
+              <li class="lang_list_item" data-lang="de">
+                <div class="flag-icon">
+                  <img src="images/de.svg" alt="">
+                </div>
+                <span>de</span>
+              </li>
+              <li class="lang_list_item" data-lang="ru">
+                <div class="flag-icon">
+                  <img src="images/kz.svg" alt="">
+                </div>
+                <span>kz</span>
+              </li>
+              <li class="lang_list_item" data-lang="pl">
+                <div class="flag-icon">
+                  <img src="images/pl.svg" alt="">
+                </div>
+                <span>pl</span>
+              </li>
+              <li class="lang_list_item" data-lang="fi">
+                <div class="flag-icon">
+                  <img src="images/fi.svg" alt="">
+                </div>
+                <span>fi</span>
+              </li>
+              <li class="lang_list_item" data-lang="pt">
+                <div class="flag-icon">
+                  <img src="images/pt.svg" alt="">
+                </div>
+                <span>pt</span>
+              </li>
+              <li class="lang_list_item" data-lang="es">
+                <div class="flag-icon">
+                  <img src="images/es.svg" alt="">
+                </div>
+                <span>es</span>
+              </li>
+              <li class="lang_list_item" data-lang="ro">
+                <div class="flag-icon">
+                  <img src="images/ro.svg" alt="">
+                </div>
+                <span>ro</span>
+              </li>
+              <li class="lang_list_item" data-lang="cz">
+                <div class="flag-icon">
+                  <img src="images/cz.svg" alt="">
+                </div>
+                <span>cz</span>
+              </li>
+              <li class="lang_list_item" data-lang="no">
+                <div class="flag-icon">
+                  <img src="images/no.svg" alt="">
+                </div>
+                <span>no</span>
+              </li>
+              <li class="lang_list_item" data-lang="gr">
+                <div class="flag-icon">
+                  <img src="images/gr.svg" alt="">
+                </div>
+                <span>gr</span>
+              </li>
+              <li class="lang_list_item" data-lang="hu">
+                <div class="flag-icon">
+                  <img src="images/hu.svg" alt="">
+                </div>
+                <span>hu</span>
+              </li>
+              <li class="lang_list_item" data-lang="fr">
+                <div class="flag-icon">
+                  <img src="images/ca.svg" alt="">
+                </div>
+                <span>fr</span>
+              </li>
+              <li class="lang_list_item" data-lang="jp">
+                <div class="flag-icon">
+                  <img src="images/jp.svg" alt="">
+                </div>
+                <span>jp</span>
+              </li>
+              <li class="lang_list_item" data-lang="th">
+                <div class="flag-icon">
+                  <img src="images/th.svg" alt="">
+                </div>
+                <span>th</span>
+              </li>
+              <li class="lang_list_item" data-lang="ph">
+                <div class="flag-icon">
+                  <img src="images/ph.svg" alt="">
+                </div>
+                <span>ph</span>
+              </li>
+              <li class="lang_list_item" data-lang="vn">
+                <div class="flag-icon">
+                  <img src="images/vn.svg" alt="">
+                </div>
+                <span>vn</span>
+              </li>
+              <li class="lang_list_item" data-lang="lv">
+                <div class="flag-icon">
+                  <img src="images/lv.svg" alt="">
+                </div>
+                <span>lv</span>
+              </li>
+              <li class="lang_list_item" data-lang="lt">
+                <div class="flag-icon">
+                  <img src="images/lt.svg" alt="">
+                </div>
+                <span>lt</span>
+              </li>
+              <li class="lang_list_item" data-lang="ee">
+                <div class="flag-icon">
+                  <img src="images/ee.svg" alt="">
+                </div>
+                <span>ee</span>
+              </li>
+              <li class="lang_list_item" data-lang="se">
+                <div class="flag-icon">
+                  <img src="images/se.svg" alt="">
+                </div>
+                <span>se</span>
+              </li>
+              <li class="lang_list_item" data-lang="sk">
+                <div class="flag-icon">
+                  <img src="images/sk.svg" alt="">
+                </div>
+                <span>sk</span>
+              </li>
+              <!--<li class="lang_list_item" data-lang="ua">-->
+              <!--  <div class="flag-icon">-->
+              <!--    <img src="img/flags/ua.svg" alt="" />-->
+              <!--  </div>-->
+              <!--  <span>ua</span>-->
+              <!--</li>-->
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="title">
+            <div class="en">
+              It's time for some magic <br>
+              <span>Try to get amazing bonuses</span>
+            </div>
+            <div class="ru">
+              Пришло время для магии<br>
+              <span>Попробуйте получить потрясающие бонусы </span>
+            </div>
+            <div class="de">
+              Es ist Zeit für etwas Magie <br>
+              <span>Versuchen Sie, erstaunliche Boni zu bekommen</span>
+            </div>
+            <div class="fi">
+              On aika taikuulle <br>
+              <span>Yritä saada uskomattomia bonuksia</span>
+            </div>
+            <div class="pl">
+              Czas na magię <br>
+              <span>Spróbuj uzyskać niesamowite bonusy</span>
+            </div>
+            <div class="pt">
+              É hora de alguma magia <br>
+              <span>Tente obter bônus incríveis</span>
+            </div>
+            <div class="es">
+              Es hora de algo de magia<br>
+              <span>Intenta obtener bonificaciones increíbles</span>
+            </div>
+            <div class="ro">
+              Este timpul pentru o magie<br>
+              <span>Încercați să obțineți bonusuri uimitoare</span>
+            </div>
+            <div class="hu">
+              Itt az ideje egy varázslatnak<br>
+              <span>Próbáljon csodálatos bónuszokat szerezni </span>
+            </div>
+            <div class="fr">
+              Il est temps pour la magie<br>
+              <span>Essayez d'obtenir des bonus incroyables</span>
+            </div>
+            <div class="ph">
+              Panahon na para sa ilang mahika <br>
+              <span>Subukang makakuha ng mga kamangha -manghang mga bonus</span>
+            </div>
+            <div class="vn">
+              Đã đến lúc cho một số phép thuật <br>
+              <span>Cố gắng nhận được tiền thưởng tuyệt vời</span>
+            </div>
+
+            <div class="th">
+              ถึงเวลาสำหรับเวทมนตร์บางอย่าง <br>
+              <span>พยายามรับโบนัสที่น่าทึ่ง</span>
+            </div>
+            <div class="cz">
+              Je čas na nějakou magii <br>
+              <span>Zkuste získat úžasné bonusy</span>
+            </div>
+
+            <div class="jp">
+              魔法の時です <br>
+              <span>�&nbsp;晴らしいボーナスを取得してみてく�&nbsp;さい</span>
+            </div>
+            <div class="no">
+              Det er tid for litt magi <br>
+              <span>Prøv å få fantastiske bonuser</span>
+            </div>
+            <div class="gr">
+              Ήρθε η ώρα για κάποια μαγεία <br>
+              <span>�&nbsp;ροσπαθήστε να πάρετε εκπληκτικά μπόνους</span>
+            </div>
+            <div class="lt">
+              Atėjo laikas kažkokiam magijai <br>
+              <span>Pabandykite gauti nuostabias premijas</span>
+            </div>
+
+            <div class="lv">
+              Ir pienācis laiks kādai maģijai <br>
+              <span>Mēģiniet iegūt pārsteidzošas prēmijas</span>
+            </div>
+            <div class="se">
+              Det är dags för lite magi <br>
+              <span>Försök att få fantastiska bonusar</span>
+            </div>
+            <div class="ee">
+              On aeg mõne maagia jaoks <br>
+              <span>Proovige saada hämmastavaid boonuseid</span>
+            </div>
+            <div class="sk">
+              Je čas na nejakú mágiu <br>
+              <span>Pokúste sa získať úžasné bonusy</span>
+            </div>
+            <div class="ua">
+              Настав час для магії <br>
+              <span>Спробуйте отримати дивовижні бонуси</span>
+            </div>
+          </div>
+          <div id="animation_container" style="
+              background-color: rgba(0, 0, 0, 0);
+              width: 1280px;
+              height: 720px;
+            ">
+            <div class="loader">
+              <div class="loader__block">
+                <div class="loader__block-dot"></div>
+                <div class="loader__block-dot"></div>
+                <div class="loader__block-dot"></div>
+                <div class="loader__block-dot"></div>
+                <div class="loader__block-dot"></div>
+                <div class="loader__block-dot"></div>
+              </div>
+            </div>
+            <div class="bonus">
+              <div class="bonus__item bonus__item-first" data-item="1">
+                <span class="bonus__text-first" data-bonus="1"><span data-text="150 fs">150 fs</span></span>
+                <span class="bonus__text-second" data-bonus="2"><span data-text="350 fs">350 fs</span></span>
+                <span class="bonus__text-third" data-bonus="3"><span data-text="" class="bonus-value"></span></span>
+              </div>
+              <div class="bonus__item bonus__item-second" data-item="2">
+                <span class="bonus__text-first" data-bonus="1"><span data-text="150 fs">150 fs</span></span>
+                <span class="bonus__text-second" data-bonus="2"><span data-text="350 fs">350 fs</span></span>
+                <span class="bonus__text-third" data-bonus="3"><span data-text="" class="bonus-value"></span></span>
+              </div>
+              <div class="bonus__item bonus__item-third" data-item="3">
+                <span class="bonus__text-first" data-bonus="1"><span data-text="150 fs">150 fs</span></span>
+                <span class="bonus__text-second" data-bonus="2"><span data-text="350 fs">350 fs</span></span>
+                <span class="bonus__text-third" data-bonus="3"><span data-text="" class="bonus-value"></span></span>
+              </div>
+            </div>
+            <canvas id="canvas" width="1280" height="720" style="
+                position: absolute;
+                display: block;
+                background-color: rgba(0, 0, 0, 0);
+              "></canvas>
+            <div id="dom_overlay_container" style="
+                pointer-events: none;
+                overflow: hidden;
+                width: 1280px;
+                height: 720px;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                display: block;
+              "></div>
+          </div>
+          <div class="steps">
+            <div>
+              <img src="images/step-bg.png" alt="" class="steps__img">
+              <div class="en">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Sign Up </span>
+                </div>
+              </div>
+              <div class="ru">
+                <div class="steps__block">
+                  <span class="steps__num">01</span>
+                  <span>Зарегистрироваться</span>
+                </div>
+              </div>
+              <div class="de">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Anmeldung </span>
+                </div>
+              </div>
+              <div class="fi">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Kirjaudu </span>
+                </div>
+              </div>
+              <div class="pl">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Zapisz się</span>
+                </div>
+              </div>
+              <div class="pt">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Cadastre-se</span>
+                </div>
+              </div>
+              <div class="es">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Regístrate</span>
+                </div>
+              </div>
+              <div class="ro">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Inscrie-te</span>
+                </div>
+              </div>
+              <div class="hu">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Regisztrálj </span>
+                </div>
+              </div>
+              <div class="fr">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>S'inscrire</span>
+                </div>
+              </div>
+              <div class="ph">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Mag -sign up</span>
+                </div>
+              </div>
+              <div class="th">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>ลงชื่อ </span>
+                </div>
+              </div>
+              <div class="vn">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Đăng ký</span>
+                </div>
+              </div>
+              <div class="jp">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>サインアップ </span>
+                </div>
+              </div>
+              <div class="no">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Melde deg på </span>
+                </div>
+              </div>
+              <div class="cz">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Přihlásit se</span>
+                </div>
+              </div>
+              <div class="gr">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Εγγραφείτε </span>
+                </div>
+              </div>
+              <div class="lt">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Registruotis </span>
+                </div>
+              </div>
+              <div class="lv">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Pierakstīties </span>
+                </div>
+              </div>
+              <div class="se">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Bli Medlem </span>
+                </div>
+              </div>
+              <div class="ee">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Registreeri</span>
+                </div>
+              </div>
+              <div class="sk">
+                <div class="steps__block">
+                  <span class="steps__num">01</span> <span>Prihlásiť Se </span>
+                </div>
+              </div>
+              <div class="ua">
+                <div class="steps__block">
+                  <span class="steps__num">01</span>
+                  <span>Зареєструватися</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="images/step-bg.png" alt="" class="steps__img">
+              <div class="en">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Activate bonus </span>
+                </div>
+              </div>
+              <div class="ru">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Активировать бонус</span>
+                </div>
+              </div>
+              <div class="de">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Bonus aktivieren</span>
+                </div>
+              </div>
+              <div class="fi">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Aktivoida bonus</span>
+                </div>
+              </div>
+              <div class="pl">
+                <div class="steps__block">
+                  <span class="steps__num">02</span> <span>Aktywuj bonus</span>
+                </div>
+              </div>
+              <div class="pt">
+                <div class="steps__block">
+                  <span class="steps__num">02</span> <span>Ative o bônus</span>
+                </div>
+              </div>
+              <div class="es">
+                <div class="steps__block">
+                  <span class="steps__num">02</span> <span> Activar bono</span>
+                </div>
+              </div>
+              <div class="ro">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Activați bonusul</span>
+                </div>
+              </div>
+              <div class="hu">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Bónusz aktiválása</span>
+                </div>
+              </div>
+              <div class="fr">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Activer le bonus</span>
+                </div>
+              </div>
+              <div class="ph">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Isaaktibo ang bonus</span>
+                </div>
+              </div>
+              <div class="th">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>เปิดใช้งานโบนัส </span>
+                </div>
+              </div>
+              <div class="vn">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Kích hoạt tiền thưởng</span>
+                </div>
+              </div>
+              <div class="jp">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>ボーナスをアクティブにします</span>
+                </div>
+              </div>
+              <div class="no">
+                <div class="steps__block">
+                  <span class="steps__num">02</span> <span>Aktiver bonus</span>
+                </div>
+              </div>
+              <div class="cz">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Aktivovat bonus</span>
+                </div>
+              </div>
+              <div class="gr">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Ενεργοποίηση μπόνους</span>
+                </div>
+              </div>
+              <div class="lt">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Suaktyvinkite premiją</span>
+                </div>
+              </div>
+              <div class="lv">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Aktivizēt bonusu</span>
+                </div>
+              </div>
+              <div class="se">
+                <div class="steps__block">
+                  <span class="steps__num">02</span> <span>Aktivera bonus</span>
+                </div>
+              </div>
+              <div class="ee">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Boonust aktiveerida</span>
+                </div>
+              </div>
+              <div class="sk">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Aktivovať bonus</span>
+                </div>
+              </div>
+              <div class="ua">
+                <div class="steps__block">
+                  <span class="steps__num">02</span>
+                  <span>Активувати бонус</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="images/step-bg.png" alt="" class="steps__img">
+              <div class="en">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>Make a deposit </span>
+                </div>
+              </div>
+              <div class="ru">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>Сделать депозит</span>
+                </div>
+              </div>
+              <div class="de">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>Kaution machen</span>
+                </div>
+              </div>
+              <div class="fi">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>Tehdä talletus</span>
+                </div>
+              </div>
+              <div class="pl">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>Złóż depozyt</span>
+                </div>
+              </div>
+              <div class="pt">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>Faça um depósito</span>
+                </div>
+              </div>
+              <div class="es">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>Hacer un depósito</span>
+                </div>
+              </div>
+              <div class="ro">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>A face un depozit</span>
+                </div>
+              </div>
+              <div class="hu">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>Előlegez</span>
+                </div>
+              </div>
+              <div class="fr">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>Faire un dépôt</span>
+                </div>
+              </div>
+              <div class="th">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>ทำการฝากเงิน </span>
+                </div>
+              </div>
+              <div class="vn">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>Gửi tiền</span>
+                </div>
+              </div>
+              <div class="ph">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>Gumawa ng deposito</span>
+                </div>
+              </div>
+              <div class="jp">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>�&nbsp;�金します</span>
+                </div>
+              </div>
+              <div class="cz">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>Provést vklad</span>
+                </div>
+              </div>
+              <div class="no">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>Gjør et innskudd</span>
+                </div>
+              </div>
+              <div class="jp">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>�&nbsp;�金します</span>
+                </div>
+              </div>
+              <div class="gr">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>Κανω μια ΚΑΤΑΘΕΣΗ</span>
+                </div>
+              </div>
+              <div class="lt">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>Padarykite užstatą</span>
+                </div>
+              </div>
+              <div class="lv">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>Veikt depozītu</span>
+                </div>
+              </div>
+              <div class="ee">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>Sissemakse tegema</span>
+                </div>
+              </div>
+              <div class="se">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>Göra en insättning</span>
+                </div>
+              </div>
+              <div class="sk">
+                <div class="steps__block">
+                  <span class="steps__num">03</span> <span>Urobiť vklad</span>
+                </div>
+              </div>
+              <div class="ua">
+                <div class="steps__block">
+                  <span class="steps__num">03</span>
+                  <span>Зробити депозит</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <img src="images/partners.png" alt="" class="footer__partners">
+          <img src="images/partners-mob.png" alt="" class="footer__partners-mob">
+          <div class="footer__text">
+            GG.BET is operated by ASG 360 Services Limited, a company registered in the Republic of Cyprus, with its principal place of business at: Voukourestiou, 25, Neptune House, 1st floor, Flat/Office 11 Zakaki, 3045, Limassol, Cyprus; Registration number: HE 441291. All gambling services are licensed by River Entertainment B.V.(License 8048/JAZ2021-184), Address: Korporaalweg 10, Willemstad, Curaçao, Registration number: 158146, which is a parent company of ASG 360 Services Limited.
+            <br><br>
+            © <span id="current-year">2024</span> GG.BET. All rights reserved
+          </div>
+        </div>
+      </footer>
+      <div class="popup" id="popup1">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <p class="popup__congrats">
+              <span class="en">
+                CONGRATULATION! <br>
+                You won
+                <span class="bonus-cur"></span>
+                <br>
+                + 275 FREESPINS
+              </span>
+              <span class="ru">
+                Поздравляю!<br>
+                Ты выиграл <span class="bonus-cur"></span> <br>
+                + 275 Ф�&nbsp;ИСПИНОВ
+              </span>
+              <span class="de">
+                Herzlichen Glückwunsch!<br>
+                Du hast gewonnen <span class="bonus-cur"></span> <br>
+                + 275 FREISPIELE
+              </span>
+              <span class="fi">
+                Onnittelut!<br>
+                Sinä voitit <span class="bonus-cur"></span> <br>
+                + 275 Ilmaiskierrosta
+              </span>
+              <span class="pl">
+                Gratulacje!<br>
+                Wygrałeś <span class="bonus-cur"></span> <br>
+                + 275 OBROTÓW DARMOWYCH
+              </span>
+              <span class="pt">
+                Parabéns!<br>
+                Você ganhou
+                <span class="bonus-cur"></span>
+                <br>
+                + 275 PARTIDAS GRÁTIS
+              </span>
+              <span class="es">
+                ¡Felicitaciones!<br>
+                Ganaste
+                <span class="bonus-cur"></span>
+                <br>
+                + 275 GIROS GRATIS
+              </span>
+              <span class="ro">
+                Felicitări! <br>
+                Ai castigat <span class="bonus-cur"></span> <br>
+                + 275 ROTIRI GRATUITE
+              </span>
+              <span class="hu">
+                Gratulálj!<br>
+                Ön nyert <span class="bonus-cur"></span> <br>
+                + 275 INGYENES PÖRGETÉS
+              </span>
+              <span class="fr">
+                Félicitations!<br>
+                Tu as gagné <span class="bonus-cur"></span> <br>
+                + 275 TG
+              </span>
+              <span class="ph">
+                Binabati kita!<br>
+                Nanalo ka <span class="bonus-cur"></span> <br>
+                + 275 FREESPINS
+              </span>
+              <span class="vn">
+                Chúc mừng!<br>
+                Bạn đã thắng <span class="bonus-cur"></span><br>
+                + 275 Freespins
+              </span>
+              <span class="th">
+                ขอแสดงความยินดี<br>
+                คุณได้รับรางวัล <span class="bonus-cur"></span><br>
+                + 275 freespins
+              </span>
+              <span class="cz">
+                Gratuluji!<br>
+                Vyhrál jsi <span class="bonus-cur"></span> <br>
+                + 275 ZATOČENÍ ZDARMA
+              </span>
+
+              <span class="jp">
+                おめでとう！<br>あなたが勝った <span class="bonus-cur"></span>
+                <br>
+                + 275フリースパン"
+              </span>
+              <span class="no">
+                Gratulerer! <br>Du vant <span class="bonus-cur"></span> <br>
+                + 275 FREESPINS
+              </span>
+              <span class="gr">
+                Συγχαρητήρια!<br>
+                Κέρδισες <span class="bonus-cur"></span><br>
+                + 275 ΔΩΡΕΑΝ ΓΥΡΙΣΜΑΤΑ
+              </span>
+              <span class="lt">
+                Sveikiname!<br>
+                Tu laimėjai <span class="bonus-cur"></span> <br>+ 275 NEMOKAMŲ
+                SUKIMŲ
+              </span>
+              <span class="lv">
+                Apsveicu!<br>
+                Tu uzvarēji <span class="bonus-cur"></span><br>
+                + 275 BEZMAKSAS GRIEZUMI
+              </span>
+              <span class="se">
+                Grattis!<br>
+                Du vann <span class="bonus-cur"></span> <br>
+                + 275 GRATISSPINN
+              </span>
+              <span class="ee">
+                Palju õnne!<br>
+                Sina võitsid <span class="bonus-cur"></span><br>
+                + 275 TASUTA KEERUTUST
+              </span>
+              <span class="sk">
+                Gratulujem!<br>
+                Vyhral si <span class="bonus-cur"></span><br>
+                + 275 Freespins
+              </span>
+              <span class="ua">
+                Вітаю!<br>
+                Ти виграв <span class="bonus-cur"></span><br>
+                + 275 безкоштовно
+              </span>
+            </p>
+            <a href="https://redirect-gg.com/?s=60&amp;ref=vp_w55458c194230l16758p2002_%7BUSER%7D&amp;click_id=%7BCID%7D&amp;encoded_url=cHJvbW90aW9uL3dlbGNvbWUtYm9udXMtcGFjaz9zdWJfaWQ9JTdCVVNFUiU3RCMhL2F1dGgvcmVnaXN0ZXI%3D" id="btn-first" class="btn-primary btn-popup">
+              <span class="en">Get bonus</span>
+              <span class="ru">Получить бонусы</span>
+              <span class="de">Holen Sie sich Bonus</span>
+              <span class="fi">Saada bonus</span>
+              <span class="pl">Zdobądź bonus</span>
+              <span class="pt">Obtenha bônus </span>
+              <span class="es">Obtener bonos</span>
+              <span class="ro">Obțineți bonus</span>
+              <span class="hu">Bónuszt kap</span>
+              <span class="fr">Obtenir un bonus</span>
+              <span class="vn">Nhận tiền thưởng</span>
+              <span class="th">รับโบนัส</span>
+              <span class="ph">Kumuha ng mga bonus</span>
+              <span class="cz">Získejte bonus</span>
+              <span class="jp">ボーナスを取得します</span>
+              <span class="no">Få bonus</span>
+              <span class="gr">Αποκτήστε μπόνους</span>
+              <span class="lt">Gaukite premiją </span>
+              <span class="lv">Iegūstiet prēmijas</span>
+              <span class="se">Få bonus </span>
+              <span class="ee">Boonust saama</span>
+              <span class="sk">Získajte bonusy</span>
+              <span class="ua">Отримати бонуси</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/createjs.min.js"></script>
+    <script src="js/anim.js"></script>
+    <script src="js/index.js"></script>
+  
+
+</body></html>
